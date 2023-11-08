@@ -41,11 +41,14 @@ File: Layout CSS
 #pageintro article .heading{font-size:32px; text-transform:uppercase;}
 #pageintro article footer{margin-top:150px;}
 
+
+/* Gallery */
+
 .galleriaopere {
     height: 2080px; /* Altezza del rettangolo */
     background-color: #561A18; /* Colore di sfondo del rettangolo */
     margin: 0px; /* Margini esterni per spaziatura */
-    padding: 140px; /* Padding interno per spaziatura tra il contenuto e il bordo del rettangolo */
+    padding: 100px; /* Padding interno per spaziatura tra il contenuto e il bordo del rettangolo */
 	width: 100%;
     padding-right: 140px;
     padding-left: 140px;
@@ -56,7 +59,19 @@ File: Layout CSS
 	justify-content: center!important;
 }
 
-/* Gallery */
+.title {
+	font-size: 26px;
+	
+}
+
+.title p {
+	font-size: 26px;
+	padding-bottom: 30px;
+	
+}
+
+
+
 
 .portfolio-text {
 	padding-top: 12rem;
@@ -110,7 +125,7 @@ File: Layout CSS
 }
 
 .card-hover:hover img {
-	-webkit-filter: grayscale(100%);
+	-webkit-filter: grayscale(0%);
 	/* Ch 23+, Saf 6.0+, BB 10.0+ */
 	filter: grayscale(100%);
 	/* FF 35+ */
