@@ -25,9 +25,10 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 .logo {
 	text-align: center;
-	 width: 100px;
-    height: auto;
-    margin: 50px;
+	width: 100px;
+  height: auto;
+	margin: 0 auto;
+  margin-bottom: 50px;
 	margin-top: 20px;
 }
 
@@ -207,7 +208,7 @@ img {
     padding: 0;
     border: none;
     line-height: normal;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 #gallery{display:block; width:100%; margin-bottom:50px;}
