@@ -45,13 +45,12 @@ File: Layout CSS
 /* Gallery */
 
 .galleriaopere {
-    height: 1900px; /* Altezza del rettangolo */
     background-color: #561A18; /* Colore di sfondo del rettangolo */
     margin: 0px; /* Margini esterni per spaziatura */
     padding: 100px; /* Padding interno per spaziatura tra il contenuto e il bordo del rettangolo */
 	width: 100%;
-    padding-right: 140px;
-    padding-left: 140px;
+    padding-right: 210px;
+    padding-left: 210px;
     margin-right: auto;
     margin-left: auto;
 	box-sizing: border-box;
@@ -61,13 +60,13 @@ File: Layout CSS
 
 .title {
 	font-size: 26px;
-	
+
 }
 
 .sottotitolo {
 	font-size: 15px;
 	padding-bottom: 50px;
-	
+
 }
 
 /* EVENTI
@@ -75,6 +74,17 @@ File: Layout CSS
 
 .excerpt{display:inline-block; width:100%; max-width:320px; padding-bottom:20px;}
 .excerpt img{}
+/* Overlay scuro sull'immagine */
+.excerpt-overlay::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 3%;
+	width: 94%;
+	height: 94%;
+	background-color: black;
+	opacity: 0.4;
+}
 .excerpt .excerpttxt{display:block; position:relative; max-width:90%; margin:-40px auto; padding:20px;}
 .excerpt .heading{margin:0 0 5px 0;}
 .excerpt p:last-of-type{margin:0; padding:0;}
@@ -92,12 +102,8 @@ File: Layout CSS
 	transform: translate(-50%, -50%);
 	color: #fff;
 	text-align: center;
-	opacity: 0;
-  }
-
-.excerpt:hover .title-overlay {
 	opacity: 1;
-}
+  }
 
 
 
@@ -206,7 +212,7 @@ File: Layout CSS
 		text-align: left;
 		padding-top: 1rem;
 	}
-	
+
 }
 
 /* Content Area
