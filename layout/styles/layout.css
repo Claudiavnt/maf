@@ -110,7 +110,8 @@ File: Layout CSS
 	background-color: white; /* Colore di sfondo del rettangolo */
 	color: black;
 	padding: 50px;
-	padding-left: 150px;
+	padding-top: 20px;
+	padding-left: 60px;
 	display: flex;
 	align-items: center;
 	font-size: small;
@@ -119,14 +120,15 @@ File: Layout CSS
 
 	.logo img {
 		max-width: 100%; /* Assicura che l'immagine non superi la larghezza del contenitore */
-		padding-right: 50px;
+	
 
 	}
 	
 	.colonna {
 		flex: 1;
 		text-align: left center;
-		margin-right: 20px;
+		margin-left: 100px;
+	
 	}
 	
 	
