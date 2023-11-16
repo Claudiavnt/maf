@@ -46,7 +46,6 @@ File: Layout CSS
 
 .galleriaopere {
     background-color: #561A18; /* Colore di sfondo del rettangolo */
-    margin: 0px; /* Margini esterni per spaziatura */
     padding: 100px; /* Padding interno per spaziatura tra il contenuto e il bordo del rettangolo */
 	width: 100%;
     padding-right: 210px;
@@ -60,12 +59,14 @@ File: Layout CSS
 
 .title {
 	font-size: 26px;
+	margin-bottom: 10px;
 
 }
 
 .sottotitolo {
 	font-size: 15px;
 	padding-bottom: 50px;
+	margin-top: 0;
 
 }
 
@@ -79,8 +80,8 @@ File: Layout CSS
 	content: "";
 	position: absolute;
 	top: 0;
-	left: 3%;
-	width: 94%;
+	left: 3.5%;
+	width: 93%;
 	height: 94%;
 	background-color: black;
 	opacity: 0.4;
@@ -104,6 +105,81 @@ File: Layout CSS
 	text-align: center;
 	opacity: 1;
   }
+
+  /* EVENTI MOD */
+  .event-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 20px;
+  }
+
+  .event {
+	position: relative;
+	overflow: hidden;
+	margin-right: 20px; /* Aggiunto margine destro tra gli eventi per spaziatura */
+  }
+
+  .event:first-child {
+	margin-left: -20px; /* Aumentato il margine destro dell'elemento di sinistra */
+  }
+
+  .event:last-child {
+	margin-right: -20px; /* Rimuove il margine destro dall'ultimo evento per evitare spaziature extra */
+  }
+
+  .event img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  .event-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Opacità del 50% (modificabile) */
+	opacity: 0.4;
+  }
+
+  .event-text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+  }
+
+  .event-title {
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font-size: 20px;
+  }
+
+  .event-subtitle {
+	margin-right:10px;
+	margin-left: 10px;
+	font-size: 13px;
+  }
+
+  .event-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1; /* Imposta lo z-index più alto per rendere il link cliccabile sopra l'immagine */
+  }
+
+ .sottotitoloev {
+	font-size: 15px;
+	margin-top: 0;
+  }
+  
 
 /* Footer */
 .footer {
@@ -131,7 +207,7 @@ File: Layout CSS
 	
 	}
 	
-	
+	/* STORIA */
 
 
 .portfolio-text {
