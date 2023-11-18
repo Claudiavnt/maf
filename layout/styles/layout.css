@@ -129,7 +129,7 @@ File: Layout CSS
   /* EVENTI MOD */
   .event-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 0 auto;
   }
 
@@ -137,6 +137,8 @@ File: Layout CSS
 	position: relative;
 	overflow: hidden;
 	width: 90%;
+	margin-right: -20px;
+	margin-left: -15px;
   }
 
   .event img {
@@ -230,6 +232,15 @@ File: Layout CSS
 	.footer_info_text i{
 		font-size: 1.1rem;
 	}
+
+	.social-icons {
+		margin: 20px;
+	  }
+  
+	  .social-icon {
+		font-size: 24px;
+		margin-right: 0;
+	  }
 
 	/* STORIA */
 
