@@ -11,6 +11,26 @@ File: Layout CSS
 @import url("fontawesome-4.6.3.min.css");
 @import url("framework.css");
 
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('layout/font/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('layout/font/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Italic';
+  src: url('layout/font/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Thin';
+  src: url('layout/font/Poppins-Thin.ttf') format('truetype');
+}
+
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0, .row0 a{}
@@ -110,21 +130,13 @@ File: Layout CSS
   .event-container {
 	display: flex;
 	justify-content: space-around;
-	margin: 20px;
+	margin: 0 auto;
   }
 
   .event {
 	position: relative;
 	overflow: hidden;
-	margin-right: 20px; /* Aggiunto margine destro tra gli eventi per spaziatura */
-  }
-
-  .event:first-child {
-	margin-left: -20px; /* Aumentato il margine destro dell'elemento di sinistra */
-  }
-
-  .event:last-child {
-	margin-right: -20px; /* Rimuove il margine destro dall'ultimo evento per evitare spaziature extra */
+	width: 90%;
   }
 
   .event img {
@@ -179,7 +191,7 @@ File: Layout CSS
 	font-size: 15px;
 	margin-top: 0;
   }
-  
+
 
 /* Footer */
 .footer {
@@ -194,19 +206,31 @@ File: Layout CSS
 	line-height: 1;
 	}
 
-	.logo img {
-		max-width: 100%; /* Assicura che l'immagine non superi la larghezza del contenitore */
-	
+	.footer_logo{
+		text-align: center;
+	}
 
+	.footer_logo img {
+		max-width: 80%; /* Assicura che l'immagine non superi la larghezza del contenitore */
+		margin: auto;
 	}
-	
-	.colonna {
-		flex: 1;
-		text-align: left center;
-		margin-left: 100px;
-	
+
+	.footer_info_title{
+		font-weight: bold;
+		font-size: 1.2rem;
+		font-family: 'Poppins-Regular', sans-serif;
+		margin-bottom: 2.5rem;
 	}
-	
+
+	.footer_info_text{
+		line-height: 1.5;
+		font-size: 1rem;
+	}
+
+	.footer_info_text i{
+		font-size: 1.1rem;
+	}
+
 	/* STORIA */
 
 
@@ -606,7 +630,7 @@ table a, #comments a{background-color:inherit;}
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px){
-	.hoc{max-width:978px;}
+	.hoc{max-width:1020px;}
 }
 
 
