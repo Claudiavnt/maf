@@ -1,29 +1,22 @@
 @charset "utf-8";
-/*
-Template Name: Penyler
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
-File: Layout CSS
-*/
+
 
 @import url("fontawesome-4.6.3.min.css");
 @import url("framework.css");
 
 @font-face {
-  font-family: 'Poppins-Regular';
-  src: url('layout/font/Poppins-Regular.ttf') format('truetype');
+  font-family: 'Lato-Regular';
+  src: url('layout/font/Lato-Regular') format('truetype');
 }
 
 @font-face {
-  font-family: 'Poppins-Bold';
-  src: url('layout/font/Poppins-Bold.ttf') format('truetype');
+  font-family: 'Lato-Bold';
+  src: url('layout/font/Lato-Bold') format('truetype');
 }
 
 @font-face {
-  font-family: 'Poppins-Italic';
-  src: url('layout/font/Poppins-Italic.ttf') format('truetype');
+  font-family: 'Lato-Light';
+  src: url('layout/font/Lato-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -80,14 +73,13 @@ File: Layout CSS
 .title {
 	font-size: 26px;
 	margin-bottom: 10px;
-
 }
 
 .sottotitolo {
 	font-size: 15px;
 	padding-bottom: 50px;
 	margin-top: 0;
-
+	font-family: 'Lato-Regular', sans-serif;
 }
 
 /* EVENTI
@@ -192,6 +184,7 @@ File: Layout CSS
  .sottotitoloev {
 	font-size: 15px;
 	margin-top: 0;
+	font-family: 'Lato-Regular', sans-serif;
   }
 
 
@@ -205,7 +198,7 @@ File: Layout CSS
 	display: flex;
 	align-items: center;
 	font-size: small;
-	line-height: 1;
+	line-height: 1,5;
 	}
 
 	.footer_logo{
@@ -220,13 +213,14 @@ File: Layout CSS
 	.footer_info_title{
 		font-weight: bold;
 		font-size: 1.2rem;
-		font-family: 'Poppins-Regular', sans-serif;
+		font-family: 'Lato-Bold', sans-serif;
 		margin-bottom: 2.5rem;
 	}
 
 	.footer_info_text{
 		line-height: 1.5;
 		font-size: 1rem;
+		font-family: 'Lato-Regular', sans-serif;
 	}
 
 	.footer_info_text i{
@@ -241,6 +235,33 @@ File: Layout CSS
 		font-size: 24px;
 		margin-right: 0;
 	  }
+
+	  .social-logo {
+		font-size: 24px; /* Regola la dimensione del font secondo le tue esigenze */
+		margin: 0 px; /* Aggiungi margine tra i loghi, se necessario */
+		margin-right: 20px;
+		margin-top: 5px;
+		color:black;
+      }
+
+	  .social-logo:hover {
+		transition: all 0.0,01s;
+		color:#561A18;
+		border-color:#561A18; /* Cambia il colore del bordo al passaggio del mouse */
+		box-shadow:#561A18; /* Aggiungi un'ombra al passaggio del mouse */
+	  }
+
+	/* Fine */
+	.after-footer-rectangle {
+		background-color:#561A18; /* Colore di sfondo del rettangolo */
+		height: 100px; /* Altezza del rettangolo (puoi regolare questa dimensione) */
+		width: 100%; /* Larghezza pari al 100% della viewport width */
+	  }
+
+	  .font-weight-bold {
+		color: white;
+	  }
+
 
 	/* STORIA */
 
