@@ -58,16 +58,19 @@
 /* Gallery */
 
 .galleriaopere {
-    background-color: #561A18; /* Colore di sfondo del rettangolo */
-    padding: 100px; /* Padding interno per spaziatura tra il contenuto e il bordo del rettangolo */
+  background-color: #561A18; /* Colore di sfondo del rettangolo */
 	width: 100%;
-    padding-right: 210px;
-    padding-left: 210px;
-    margin-right: auto;
-    margin-left: auto;
+	margin: 0 auto;
 	box-sizing: border-box;
-	display: block;
+	margin-top: 1;
+	display: flex;
 	justify-content: center!important;
+}
+
+.galleriaopere-wrapper {
+  width:75%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .title {
@@ -221,6 +224,14 @@
 		font-family: 'Lato-Regular', sans-serif;
 	}
 
+	.footer_info_text a i{
+		font-size: 1.4rem;
+	}
+
+	.footer_info_text a:hover{
+		text-decoration: none;
+	}
+
 	.footer_info_text i{
 		font-size: 1.1rem;
 	}
@@ -228,7 +239,7 @@
 	.social-icons {
 		margin: 20px;
 	  }
-  
+
 	  .social-icon {
 		font-size: 24px;
 		margin-right: 0;
@@ -354,19 +365,20 @@
 @media (max-width: 767px) {
 	.card-hover .reveal,
 	.card-hover:hover .reveal {
-		visibility: visible;
+		display: hidden;
+		/* visibility: visible;
 		opacity: 1;
 		position: relative;
 		width: 100%;
 		background-color: #ebeae9;
-		color: black;
+		color: black; */
 	}
-	.reveal p {
+	/* .reveal p {
 		line-height: 125%;
 		font-size: 1.2rem;
 		text-align: left;
 		padding-top: 1rem;
-	}
+	} */
 
 }
 
@@ -619,7 +631,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#A3C9D3;}
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav a:hover, #mainav li:hover > a{color:#561A18; background-color:inherit;}
+#mainav a:hover, #mainav li:hover > a{color:#561A18; background-color:inherit; text-decoration: none;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#A3C9D3;}
 #mainav form select{color:#FFFFFF; background-color:#1F1F1F; border-color:#000000;}
@@ -660,7 +672,7 @@ table a, #comments a{background-color:inherit;}
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px){
-	.hoc{max-width:1020px;}
+	.hoc{max-width:72%;}
 }
 
 
