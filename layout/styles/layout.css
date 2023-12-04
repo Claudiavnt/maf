@@ -154,6 +154,26 @@
 	font-size: 20px;
 }
 
+/* PRENOTAZIONE */
+
+
+
+.overlay-container {
+	position: relative;
+	display: inline-block;
+  }
+
+  .overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff; /* Colore del testo sopra l'immagine */
+  }
+
+
+
 /* EVENTI
 --------------------------------------------------------------------------------------------------------------- */
 
