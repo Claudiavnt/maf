@@ -112,6 +112,48 @@
 	margin-top: -30px;
   }
 
+  .linetext {
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+  }
+
+  .linetext a {
+	text-decoration: none; /* Rimuovi il sottolineato predefinito del link */
+	color: inherit; /* Eredità del colore dal genitore */
+  }
+
+  .linetext::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: white; /* Colore della linea */
+	transition: width 0.3s ease; /* Transizione dell'animazione */
+  }
+
+  .linetext:hover::before {
+	width: 100%;
+  }
+
+  .price {
+	float: right;
+	font-weight: bold;
+	margin-right: 650px;
+  }
+
+  .footer_info_title {
+	margin-top: 1em;
+	font-weight: bold;
+  }
+
+  .title2 {
+	font-size: 20px;
+}
+
 /* EVENTI
 --------------------------------------------------------------------------------------------------------------- */
 
