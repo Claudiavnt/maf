@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <title>MAF</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+      </head>
+
+   <body id="top">
+      <!-- Top Background Image Wrapper -->
+      <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/biglietto.png');">
+         <div class="wrapper">
+            <header id="header" class="hoc clear">
+               <div class="logo">
+                  <a href="index.html"><img src="logomaf.png" alt="logo del sito"></a>
+               </div>
+               <nav id="mainav" class="clear"></nav>
+               <script src="layout/scripts/navbar.js"></script>
+               <script src="layout/scripts/mobileNavbar.js"></script>
+            </header>
+         </div>
+         <div id="pageintro" class="hoc clear secondary-pageintro">
+            <article>
+               <h2 class="heading">Prenota il tuo biglietto</h2>
+               <p>Museo Archeologico Fregellae</p>
+            </article>
+         </div>
+      </div>
+      <!-- End Top Background Image Wrapper -->
+
+      <div class="wrapper row3">
+         <main class="hoc container clear">
+            <!-- main body -->
+            <div class="container-fluidcalendar">
+               <div class="row">
+                 <!-- Colonna di Sinistra - Calendario -->
+                 <div class="col-md-4 col-left">
+                  <label for="date" class="form-label2">Data della visita:</label>
+                  <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+           
+               
+
+
+                 <!-- Colonna di Destra - Informazioni di Prenotazione -->
+                 <div class="col-md-8 col-right">
+                   <h2 class="text-center mb-4">Inserisci le informazioni</h2>
+           
+                   <form>
+                     <div class="mb-3">
+                       <label for="name" class="form-label">Nome completo:</label>
+                       <input type="text" class="form-control" id="name" name="name" required>
+                     </div>
+           
+                     <div class="mb-3">
+                       <label for="email" class="form-label">Indirizzo email:</label>
+                       <input type="email" class="form-control" id="email" name="email" required>
+                     </div>
+           
+                     <div class="mb-3">
+                       <label for="ticket-type" class="form-label">Tipo di biglietto:</label>
+                       <select class="form-select" id="ticket-type" name="ticket-type" required>
+                         <option value="" disabled selected>Scegli il tipo di biglietto</option>
+                         <option value="adult">Adulto</option>
+                         <option value="child">Bambino</option>
+                         <option value="senior">Anziano (oltre i 65 anni)</option>
+                       </select>
+                     </div>
+           
+                     <button type="submit" class="btn inverse" href="storia.html">Prenota i Biglietti</button>
+                
+
+                   </form>
+                 </div>
+               </div>
+             </div>
+                   
+            <!-- / main body -->
+         </main>
+      </div>
+
+      <div class="Icone center">
+         <img src="images/icone.svg" alt="Descrizione dell'immagine">
+      </div>
+
+      <!-- FOOTER -->
+      <footer id="footer">
+         <script src="layout/scripts/footer.js"></script>
+      </footer>
+
+       <!-- FINE -->
+       <div class="after-footer-rectangle container-fluid text-center text-white py-4 px-sm-3 px-md-5">
+         <p class="mb-2 text-white"> MAF. Diritti riservati </p>
+         <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="https://www.behance.net/ileniaventura">Ilenia Ventura</a></p>
+     </div>
+
+      <!-- JAVASCRIPTS -->
+      <script src="layout/scripts/jquery.min.js"></script>
+      <script src="layout/scripts/jquery.backtotop.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   </body>
+</html>

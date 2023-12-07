@@ -153,8 +153,39 @@
   margin-right: 15rem;
 }
 
-/* PRENOTAZIONE */
+/* CALENDARIO BIGLIETTO */
 
+.container-fluidcalendar {
+	height: 100vh;
+  }
+
+  .row {
+	height: 100%;
+  }
+
+  .col-left {
+	background-color: #561A18;
+	padding: 20px;
+	height: 100%;
+  }
+
+  .col-left input[type="date"] {
+	background-color: white; /* Sostituisci con il colore desiderato */
+  }
+
+  .col-right {
+	padding: 20px;
+	height: 100%;
+  }
+
+  .form-label2 {
+	color: white
+  }
+
+  .booking-form {
+	max-width: 600px;
+	margin: auto;
+  }
 
 
 .overlay-container {
