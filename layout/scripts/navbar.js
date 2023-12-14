@@ -13,4 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
       <li class="${currentPage === 'podcast.html' ? 'active' : ''}"><a href="#">Podcast</a></li>
     `;
     navbarContainer.appendChild(listItem);
+
+    $('[data-toggle="tooltip"]').tooltip()
 });

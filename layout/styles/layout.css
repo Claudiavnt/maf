@@ -166,7 +166,6 @@
   .col-left {
 	background-color: #561A18;
 	padding: 20px;
-	height: 100%;
   }
 
   .col-left input[type="date"] {
@@ -175,7 +174,6 @@
 
   .col-right {
 	padding: 20px;
-	height: 100%;
   }
 
   .form-label2 {
@@ -714,7 +712,7 @@ img {
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#FFFFFF; background-color:#000000;}
+body{color:#FFFFFF}
 a{color:#A3C9D3;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -854,11 +852,19 @@ table a, #comments a{background-color:inherit;}
 
 	#breadcrumb{}
 
-	.container{}
+	.container{ padding:80px 0!important}
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
 	#copyright{}
+
+	.col-left{
+		height: 9rem!important
+	}
+
+	.col-right{
+		height: 9rem!important
+	}
 }
 
 
@@ -881,4 +887,5 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 }
+
 
