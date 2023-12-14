@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <li class="${currentPage === 'index.html' ? 'active' : ''}"><a href="index.html">Home</a></li>
       <li class="${currentPage === 'visita.html' ? 'active' : ''}"><a href="visita.html">Come Visitare</a></li>
       <li class="${currentPage === 'eventi.html' ? 'active' : ''}"><a href="#">Eventi</a></li>
-      <li class="${currentPage === 'educazione.html' ? 'active' : ''}"><a href="#">Educazione</a></li>
+      <li class="${currentPage === 'educazione.html' ? 'active' : ''}"><a href="educazione.html">Educazione</a></li>
       <li class="${currentPage === 'child.html' ? 'active' : ''}"><a href="#">MAF CHILD</a></li>
       <li class="${currentPage === 'podcast.html' ? 'active' : ''}"><a href="#">Podcast</a></li>
     `;
