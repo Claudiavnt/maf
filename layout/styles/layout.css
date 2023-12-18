@@ -24,6 +24,11 @@
   src: url('layout/font/Poppins-Thin.ttf') format('truetype');
 }
 
+  @font-face {
+	font-family: 'Playfair';
+	src: url('layout/Playfair') format('truetype');
+  }
+
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0, .row0 a{}
@@ -45,6 +50,16 @@
 	margin-top: 20px;
 }
 
+.logochild {
+	text-align: center;
+	width: 120px;
+  height: auto;
+	margin: 0 auto;
+  margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro{padding:150px 0 100px;}
@@ -54,6 +69,7 @@
 #pageintro article p{font-size:16px; margin-top:-8px;}
 #pageintro article .heading{font-size:32px; text-transform:uppercase;}
 #pageintro article footer{margin-top:150px;}
+#pageintro article .headingchild{font-size:32px;}
 
 
 /* Gallery */
@@ -322,6 +338,7 @@
 	font-size: 15px;
 	margin-top: 0;
   }
+
 
 
 /* Footer */
