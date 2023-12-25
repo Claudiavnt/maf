@@ -781,7 +781,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#A3C9D3;}
 #breadcrumb li:last-child a{color:#A3C9D3;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
-.container .sidebar nav a:hover{color:#A3C9D3;}
+.container .sidebar nav a:hover{color:#561A18;}
 
 .pagination a, .pagination strong{border-color:#D7D7D7;}
 .pagination .current *{color:#FFFFFF; background-color:#A3C9D3;}
