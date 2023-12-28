@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Initiate the wowjs
+  new WOW().init();
   var navbarContainer = document.getElementById('mainav');
 
   var currentPage = window.location.pathname.split('/').pop(); // Ottieni il nome della pagina corrente
