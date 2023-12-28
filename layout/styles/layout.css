@@ -951,4 +951,25 @@ table a, #comments a{background-color:inherit;}
 	.font-x3{font-size:1.6rem;}
 }
 
+.audio-image-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.audio-container {
+    position: absolute;
+    bottom: 20px; /* Puoi regolare la distanza dal fondo dell'immagine */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Sfondo semi-trasparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
