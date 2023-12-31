@@ -122,7 +122,7 @@
 }
 
 #pageintro article .headingchild {
-	font-size: 32px;
+	font-size: 4rem;
 }
 
 
@@ -1357,6 +1357,10 @@ textarea:focus,
 
 
 /* Rows */
+.row {
+	color: #474747;
+}
+
 .row0,
 .row0 a {}
 
@@ -1871,4 +1875,11 @@ img {
 
 .classes-item:hover {
     margin-top: -10px;
+}
+
+.texture-child {
+	background-image: url('../../images/texture_child.jpg');
+	width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
