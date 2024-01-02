@@ -1866,7 +1866,7 @@ img {
 }
 
 .about-img img:hover {
-    background: var(--primary) !important;
+    background: #D57A3C !important;
 }
 /*** Classes ***/
 .classes-item {
@@ -1882,4 +1882,13 @@ img {
 	width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.rounded {
+	border-radius: 10px !important;
+}
+
+.activity-title{
+	font-family: 'Amaranth-Bold', sans-serif;
+	font-size: 2rem;
 }
