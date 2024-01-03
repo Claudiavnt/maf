@@ -886,6 +886,7 @@
 /* Rounded Corners - Can be deleted if not wanted
 --------------------------------------------------------------------------------------------------------------- */
 .btn,
+.btnChild,
 .cta span::before,
 .cta span::after,
 .faico a,
@@ -1342,17 +1343,21 @@ textarea:focus,
 }
 
 .btn,
-.btn.inverse:hover {
+.btn.inverse:hover,
+.btnChild.inverse:hover {
 	color: inherit;
 	border-color: white;
 	background-color: transparent;
 }
 
 .btn:hover,
-.btn.inverse {
+.btnChild:hover,
+.btn.inverse,
+.btnChild.inverse {
 	color: white;
 	background-color: #561A18;
 	border-color: #561A18;
+	text-decoration: none;
 }
 
 
