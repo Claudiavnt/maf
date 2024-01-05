@@ -1794,6 +1794,11 @@ img {
     justify-content: center;
 }
 
+.facility-icon img{
+	width: 70%;
+	z-index: 99999;
+}
+
 .facility-item .facility-icon::before {
     position: absolute;
     content: "";
@@ -1801,7 +1806,7 @@ img {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, .9);
+    background: rgba(255,255,255, .9);
     transition: .5s;
     z-index: 1;
 }
@@ -1863,6 +1868,22 @@ img {
 
 .facility-item:hover * {
     color: #FFFFFF !important;
+}
+
+.facility-item:hover .facility-icon img.visite {
+	content: url('../../icone/4.svg');
+}
+
+.facility-item:hover .facility-icon img.famiglia {
+	content: url('../../icone/3.svg');
+}
+
+.facility-item:hover .facility-icon img.scuola {
+	content: url('../../icone/2.svg');
+}
+
+.facility-item:hover .facility-icon img.camp {
+	content: url('../../icone/6.svg');
 }
 
 /*** About ***/
