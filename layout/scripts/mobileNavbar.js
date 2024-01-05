@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var e=$(this);
     var isActive = e.parent().hasClass("active");
     // Creare un elemento li e aggiungerlo a menuDropdown
-    var listItem = $("<li class='menu-dropdown-list p-2'></li>");
+    var listItem = $("<li class='menu-dropdown-list p-4'></li>");
     // Aggiungere la classe "active" se necessario
     if (isActive) {
       listItem.addClass("active");
